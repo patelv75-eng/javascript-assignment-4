@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Odd or Even</title>
+</head>
+<body>
+   
+    <pre id="output"></pre>
+
+    <script>
+
+        let output = "";
+        for (let i = 0; i <= 200; i++) {
+            const oddOrEven = i % 2 === 0 ? "even" : "odd";
+            output += i + " is " + oddOrEven + "\n";
+        }
+        document.getElementById("output").textContent = output;
+       
+    </script>
+</body>
+</html>
