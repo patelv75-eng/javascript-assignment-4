@@ -9,10 +9,15 @@
     
     <script>
 
+       
+        function oddOrEven(num) {
+         
+            return num % 2 === 0 ? "even" : "odd";
+        }
+
         let output = "";
         for (let i = 0; i <= 200; i++) {
-            const oddOrEven = i % 2 === 0 ? "even" : "odd";
-            output += i + " is " + oddOrEven + "\n";
+            output += i + " is " + oddOrEven(i) + "\n";
         }
         document.getElementById("output").textContent = output;
        
